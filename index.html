@@ -19,27 +19,27 @@
   <body>
     <header class="header">
       <nav class="menu">
-        <a href="index.html" class="menu__logo">COFFEE HOUSE</a>
+        <div class="menu__logo">COFFEE HOUSE<a href="index.html"></a></div>
         <ul class="menu__ul">
-          <li class="menu__li"><a href="#" class="menu__link">ХОМЕ</a></li>
-          <li class="menu__li"><a href="#" class="menu__link">СТОРИ</a></li>
-          <li class="menu__li"><a href="#" class="menu__link">БЛОХ</a></li>
-          <li class="menu__li"><a href="#" class="menu__link">SUBSCRIBE</a></li>
+          <li class="menu__li"><a href="#home">HOME</a></li>
+          <li class="menu__li"><a href="#story">STORY</a></li>
+          <li class="menu__li"><a href="#blog">BLOG</a></li>
+          <li class="menu__li"><a href="#subscribe">SUBSCRIBE</a></li>
         </ul>
       </nav>
-      <div class="home">
-        <h1 class="home__title">TAKE YOUR TIMETIME</h1>
+      <div id="home" class="home">
+        <div class="home__title">TAKE YOUR TIMETIME</div>
         <div class="home__line"></div>
       </div>
     </header>
     <main class="main">
-        <div class="story__title">STORY</div>
+        <div id="story"class="story__title">STORY</div>
         <div class="story">
             <img  class="story__image" src="img/image2.jpg" alt="">
             <div class="story__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra risus.</div>
         </div>
         <div class="blog">
-            <div class="blog__title">BLOG</div>
+            <div id="blog" class="blog__title">BLOG</div>
             <div class="blog__frames">
                 <div class="frame">
                         <div class="blog__frame__title">Daily Coffee News</div>
@@ -58,7 +58,7 @@
                 </div>  
             </div>
         </div>
-        <div class="contacts">
+        <div id="subscribe"class="contacts">
             <div class="subscribe">SUBSCRIBE</div>
             <input class="email" placeholder="enter your email"></input>
             <button class="submit__button" type="submit">SUBMIT</button>

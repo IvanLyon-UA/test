@@ -1,17 +1,23 @@
 body {
-  font-family: "Oswald", sans-serif;}
+  font-family: "Oswald", sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
 /*-----------------------------------HEADER----------------------------------*/
 .header {
-  box-sizing: border-box;
-  height: 812px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
   background-image: url(img/image1.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center center;
+  max-height: 732px;/*622px+110px*/
+  min-height: 421px;/*311px+110px*/
   background-color: #ffffff;}
 .menu__logo {
   font-family: oswald;
-  display: flex;
-  font-weight: 500px;
   font-size: 36px;
   font-style: medium;
   text-decoration: none;
@@ -20,54 +26,55 @@ body {
 .menu__logo:hover {
   color: #e400c5;}
 .menu {
-  font-family: oswald;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: auto;
+  width: 100%;
+  min-width: 720px;
   height: 110px;
   background-color: #ffffff;}
 .menu__ul {
+  width: 30%;
   display: flex;
   list-style-type: none;
-  margin-right: 40px;}
+  padding: 5px;
+  margin-right: 80px;
+  min-width: 300px;}
 .menu__li {
-  margin-right: 40px;}
-.menu__link {
-  font-family: oswald;
-  font-size: 24px;
-  font-style: light;
   font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: 
   color: #000000;
-  text-decoration: none;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  padding: 2px;}
-.menu__link:hover {
+
+  }
+
+.menu__li:hover {
   border: 3px solid #e400c5;}
 .home {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;}
+  justify-content: center
+  align-content:center;
+  flex-grow: 1;
+}
 .home__title {
-  display: flex;
   font-weight: 700;
   font-size: 60px;
+  line-height: 89;
+  text-align: center;
   font-style: bold;
   color: #ffffff;
-  margin-top: 270px;
-  padding-left: 15px;
-  padding-right: 15px;}
+  margin-bottom: 7px;}
+
 .home__line {
-  display: flex;
   width: 80px;
-  border-bottom: solid #817070;
-  border-bottom-width: 10px;
-  margin-top: -40px;}
-.home__title:hover {
-  color: #817070;
-  background-color: #ffffff;}
+  height: 10px;
+  background: #817070;
+}
 /*----------------------------------HEADER----------------------------------*/
 /*--------------------------------------------------------------------------*/
 /*-----------------------------------MAIN-----------------------------------*/

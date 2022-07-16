@@ -5,48 +5,52 @@ margin: 0;
 padding: 0;}
 /*-----------------------------------HEADER----------------------------------*/
 .header {
-  display: flex;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
+  /*адаптивный фон*/
   background-image: url(img/image1.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;    
   background-size: cover;
   background-position: center center;
-  max-height: 732px;/*622px+110px*/
-  min-height: 421px;/*311px+110px*/
-  background-color: #ffffff;}
+  max-height: 732px; /*622px+110px*/
+  min-height: 421px; /*311px+110px*/ }
 .menu__logo {
-  font-family: oswald;
+  display: block;
+  font-weight: 500;
   font-size: 36px;
-  font-style: medium;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
-  margin: 82px;}
+  color: black;
+  min-width: 206px;
+  margin: 0px 80px;}
 .menu__logo:hover {
   color: #e400c5;}
 .menu {
+  width: 100%;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  min-width: 720px;
-  height: 110px;
-  background-color: #ffffff;}
+  background-color: #FFFFFF;
+  min-width: 720px;}
 .menu__ul {
   width: 30%;
   display: flex;
-  list-style-type: none;
   justify-content: space-between;
+  list-style-type: none;
   padding: 5px;
   margin-right: 80px;
   min-width: 300px;}
 .menu__elem {
-  border: 3px solid #fff;
   font-weight: 300;
   font-size: 24px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   }
@@ -54,18 +58,19 @@ padding: 0;}
 .menu__elem:hover {
   border: 3px solid #e400c5;}
 .home {
-  display: flex;
   width: 100%;
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   align-content: center;
-  flex-grow: 1;
+  /*растягиваем по свободному пространству родителя*/
+  flex-grow: 1; 
 }
 .home__title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 89;
+  line-height: 89px;
   text-align: center;
   font-style: bold;
   color: #ffffff;

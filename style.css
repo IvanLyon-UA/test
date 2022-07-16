@@ -80,12 +80,13 @@ body {
     text-align: center;
     font-style: medium;
     font-weight: 500;
-    font-size: 36px;}
+    padding-top: 50px;
+    font-size: 36px;
+  }
 .story{
     font-family: oswald;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #ffffff;
     height: 530px;}
 .story__image{

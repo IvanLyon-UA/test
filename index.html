@@ -22,13 +22,13 @@
         <div class="container">
           <div class="header__row">
             <div class="header__logo">
-              <div class="header__logo-text">Coffee house</div>
+              <div id="home" class="header__logo-text">Coffee house</div>
             </div>
             <ul class="header__menu-ul">
-              <li class="header__menu-elem">HOME</li>
-              <li class="header__menu-elem">STORY</li>
-              <li class="header__menu-elem">BLOG</li>
-              <li class="header__menu-elem">SUBSCRIBE</li>
+              <li><a href="#home" class="header__menu-elem">Home</a></li>
+              <li><a href="#story" class="header__menu-elem">Story</a></li>
+              <li><a href="#blog" class="header__menu-elem">Blog</a></li>
+              <li><a href="#subscribe" class="header__menu-elem">Subscribe</a></li>
             </ul>
           </div>
         </div>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="story">
+        <div id="story" class="story">
           <div class="container">
             <div class="story__row">
               <div class="story__title">Story</div>
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="blog">
+        <div id="blog" class="blog">
           <div class="container">
             <div class="blog__row">
               <div class="blog__title">Blog</div>
@@ -122,17 +122,16 @@
             </div>
           </div>
         </div>
-        <div class="contacts">
+        <div id="subscribe" class="contacts">
           <div class="container">
-            <div class="contacts__row">
+            <form class="contacts__row">
               <div class="contacts__title">Subscribe</div>
               <input
                 class="contacts__email"
                 type="email"
-                placeholder="enter your e-mail"
-              />
+                placeholder="enter your e-mail"/>
               <button class="submit__btn">Submit</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

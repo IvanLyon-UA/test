@@ -326,7 +326,7 @@ input::placeholder {
 }
 /* Для ширины 800 пикселей и меньше */
 @media screen and (max-width: 800px) {
-  .blog__frame {max-width: 250px;}
-  .blog__frame-image{max-width: 210px;
+  .blog__frame {max-width: 200px;}
+  .blog__frame-image{max-width: 160px;
   height: auto;}
   }

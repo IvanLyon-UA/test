@@ -106,6 +106,7 @@ h6 {
   /*border: 1px solid black;*/
 }
 .header__logo-text {
+  
   text-align: center;
   font-family: oswald;
   font-weight: 500;
@@ -113,6 +114,7 @@ h6 {
   line-height: 53px;
   text-transform: uppercase;
 }
+
 .header__menu-ul {
   display: flex;
   justify-content: center;
@@ -322,3 +324,9 @@ input::placeholder {
   font-weight: 300;
   font-size: 20px;
 }
+/* Для ширины 800 пикселей и меньше */
+@media screen and (max-width: 800px) {
+  .blog__frame {max-width: 250px;}
+  .blog__frame-image{max-width: 210px;
+  height: auto;}
+  }
